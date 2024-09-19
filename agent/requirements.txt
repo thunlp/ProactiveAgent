@@ -1,0 +1,6 @@
+windows-toasts
+fastapi
+uvicorn
+docstring_parser
+pyperclip
+guid

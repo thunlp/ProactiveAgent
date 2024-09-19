@@ -1,0 +1,71 @@
+environment:
+  agent_ops:
+  - terminal_run(command)
+  - file.open(file_path, mode)
+  - file.save(file_path, content)
+  - browser.open(url)
+  - code_suggest_fix(error_message, code_snippet)
+  - doc_search(keyword)
+  - code_refactor(code_snippet)
+  - api_request(url, params)
+  - database_query(query)
+  - generate_visualization(data, chart_type)
+  - display_message(message)
+  - capture_screenshot(window_name)
+  - highlight_text_in_editor(file_path, line_number)
+  description: John is working in his office at an educational institution, ensuring
+    systems are running smoothly and securely. He uses a high-performance workstation
+    PC, network tools, and backup drives. John is focused on writing scripts to automate
+    system maintenance tasks and perform security audits.
+  entities:
+  - Workstation PC
+  - Network Tools
+  - Backup Drives
+  - System Config Files
+  - Asset Management System
+  - Security Scanners
+  - Institution Policies
+  - Tech Support Requests
+  - Compliance Requirements
+  events_example:
+  - The user starts coding a script named 'CapitalizeName.rb' in Visual Studio Code.
+  - The agent opens the browser and searches for 'Ruby capitalize method syntax' on
+    Google.
+  - The user reviews previous GitHub commits to analyze recent script changes.
+  - The user switches to the terminal and runs the Ruby script 'CapitalizeName.rb'.
+  - The agent scans through the open file 'CapitalizeName.rb' and highlights lines
+    with syntax errors.
+  - The user scrolls through Ruby documentation for information on string manipulation
+    functions.
+  - The user switches back to Slack to check team messages about recent script errors.
+  - The agent suggests a code snippet to fix the undefined method error in the Ruby
+    script.
+  - The user switches back to their code editor to implement the suggested fix.
+  - The agent initializes a new file in the directory to document the script's change
+    history.
+  - The user opens an existing file 'UserData.csv' in the spreadsheet application.
+  - The agent runs an automated unit test suite on the current Ruby project files.
+  - The agent identifies incorrect file paths in the script after inspecting the open
+    project files.
+  - The user reviews system logs in a text viewer to trace errors encountered during
+    script execution.
+  - The user tabs through multiple code files currently opened in the editor.
+  - The agent generates a report on the success rates of recent task automation scripts
+    based on available log data.
+  - The user takes a brief pause and checks notification alerts on the desktop.
+  - The agent records a new Git commit with comments summarizing changes in 'CapitalizeName.rb'.
+  - The user queries the database to verify data processing outcomes after running
+    the script.
+  - The agent reads through configuration files to verify environment settings for
+    script execution.
+  theme: System Administration
+eventSink:
+  out_file: agent_data/scene_0.jsonl
+user:
+  description: John, 38, is a system administrator at an educational institution.
+    He is proficient in Ruby, Perl, and Bash scripting. John ensures systems are running
+    smoothly and securely, focusing on automating system maintenance tasks and performing
+    security audits.
+  goal: Write a Ruby script to automatically capitalize the first letter of user-entered
+    names.
+  theme: System Administration

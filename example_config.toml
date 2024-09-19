@@ -1,0 +1,23 @@
+max_retry_times = 1
+
+
+[api_keys]
+[[api_keys.gpt-4o]]
+api_key = "sk-1234"
+base_url = "https://example.com/v1/"
+model = "gpt-4o"
+
+# E.g.
+# [[api_keys.{your model name}]]
+# api_key = [your api key]
+# base_url = [your base url]
+# model = "{your model name}"
+
+
+[request]
+default_completions_model = "gpt-4o"
+save_completions = true
+use_cache = false
+
+[multimodal.image]
+default_model = "gpt-4o"

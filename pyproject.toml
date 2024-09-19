@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "proactiveagent"
+version = "0.1.0"
+description = "A LLM-based agent that proactively predict your instruction for easier usage"
+authors = ["Yaxi Lu <luyaxi@live.com>", "Shenzhi Yang <summerfall1819@gmail.com>"]
+readme = "README.md"
+license = "Apache License 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.46.0"
+tiktoken = "^0.7.0"
+tenacity = "^9.0.0"
+pynput = "^1.7.7"
+aw-client = "^0.5.13"
+pyyaml = "^6.0.2"
+colorlog = "^6.8.2"
+jsonlines = "^4.0.0"
+pyperclip = "^1.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

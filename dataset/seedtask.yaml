@@ -1,0 +1,245 @@
+codingassistant:
+  tasks:
+  - Implement a binary search algorithm that searches for a number x within a sorted array A of length n. The function should return the index of x in array A or indicate if x is not present.
+  - Write a Python code using Flask to create an API that takes two numbers as query parameters and returns their sum. Include error handling for non-numeric input.
+  - Write a JavaScript script to implement a fade-in and fade-out animation effect for buttons on hover.
+  - Create a Python function to clean a list of email addresses by removing invalid and duplicate entries.
+  - Use HTML and CSS to design a responsive navigation bar that converts to a hamburger menu on mobile devices.
+  - Write an SQL query to calculate and return the average credit limit of all customers.
+  - Write a Ruby script to automatically capitalize the first letter of user-entered names.
+  - Implement a Java algorithm to detect if a string is a palindrome.
+  - Use React's state management to create a counter component that allows users to increase and decrease the count.
+  - Use Vue.js to implement real-time event handling and data binding to display a personalized welcome message after a user enters their name.
+  - Use SwiftUI to design a user interface that presents fitness tutorials in a list format.
+  - Write a Go script to read a log file and count the occurrences of specific error messages.
+  - Create a user authentication system in Flask with registration, login, and logout functionalities, using JWT for authentication.
+  - Implement a virtual DOM library in JavaScript with basic functionalities similar to React.
+  - Design a complex multi-level navigation menu using HTML/CSS with submenus and hover effects.
+  - Write an SQL query to find the top 10 products with the highest sales and calculate their total sales.
+  - Write a Ruby script to automatically generate and send emails with attachments and HTML content.
+  - Implement a multi-threaded program in Java to simulate concurrent access to a bank account and ensure data consistency.
+  - Create a complex form component in React with dynamic fields and form validation.
+  - Implement a real-time chat application in Vue.js using WebSocket for communication.
+  - Design a fitness tracking app in SwiftUI with step counting and calorie calculation features.
+  - Write a concurrent web crawler in Go to scrape multiple websites and store the content in a database.
+  - Write a Python function to solve a maze problem and find the path from start to end.
+  sample_events:
+  - The user starts working on a file 'CheckName.rb' within a Ruby project in Visual Studio Code.
+  - The user searches on Google for 'How to capitalize person name in ruby?' after typing and clicking 'Enter'.
+  - The user scrolls and reviews multiple Google search results, including links to 'Stack Overflow' regarding Ruby capitalization.
+  - The user scrolls through a Stack Overflow discussion on 'How to capitalize the first letter in a String in Ruby'.
+  - The user types and edits code in 'CheckName.rb' in Visual Studio Code.
+  - The user reviews content on the Scaler website regarding Ruby array.join() method.
+  - The user returns once again to editing code in 'CheckName.rb' in Visual Studio Code.
+  - The user switches to the 'Code.exe' application but does not perform any specific actions.
+  - The user opens a new browser tab and navigates to the Google homepage.
+  - The user switches back to the Google homepage in the web browser.
+  - The user switches back to the 'Code.exe' application again without performing any actions.
+  - The user switches back to 'Code.exe', navigates to a file named isPalindrome.java in a specific project, and begins typing 'isPalindrome.java'.
+  - The user switches to the browser and types a Google search query 'How to check if the string is palindrome in java?' and hits enter.
+  - The Google search result page diffText updated with some added content indicating code output and time complexity analysis.
+  - The user types Java code into the 'isPalindrome.java' file in 'Code.exe'. They are implementing methods to check if a string is a palindrome.
+  - The user remained focused on 'Visual Studio Code'.
+  - The user visited 'https://www.bing.com/...8cad6169f...' in the web browser.
+  - The user opened a new tab in the web browser.
+  - The user performed a search for 'js fade in fade out' on Bing.
+  - The user opened the file 'main.html' in the project '/c:/Users/admin/code/js-animation'.
+  - The user switched to editing 'animation.js' in the project '/c:/Users/admin/code/js-animation'.
+  - The user visited 'https://cn.bing.com/search?' searching for 'html import js'.
+  - The user visited 'https://blog.csdn.net/.../article/details/' on the web.
+  - The user switched to 'Visual Studio Code' again.
+  - The user is active on a web application but no specific action is recorded.
+  - The user clicks on the web page, types 'swift ui list', and presses 'Enter'.
+  - The user scrolls, right-clicks, and types 'swiftui' in Visual Studio Code.
+  - The user types a combination of commands including 'ctrl_l' and clicks with the left mouse button in Visual Studio Code.
+  - The user clicks and presses 'Enter', opening a new web page displaying search results for 'swift ui list' on Bing.
+  - The user performs multiple scroll actions and types 'develop' among others, navigating through a search page titled 'swift ui - search' on Bing.
+  - The user scrolls through content on a web page with six open tabs.
+  - The user clicks, types 'endwenjian' and 'space' on a search results page titled 'swift ui development'.
+  - The user scrolls and views the page 'example/advanced-state/swiftui-example'.
+  - The user scrolls and types 'retunr ist(tab' in Visual Studio Code.
+  - The user clicks and types 'ceshi leftru' and 'h' on a search result page.
+  - The user typed 'dianz youjian dizhi jiaoyan4 python' in the DeepSeek chat application.
+  - The user moved the mouse within the 'email_filter.py' file in Visual Studio Code.
+  - The user clicked on a link from the search results for 'email address validation python' on Google.
+  - The user stayed on the search results page for 'email address validation python' on Google.
+  - The user clicked and scrolled within the DeepSeek chat application.
+  - The user clicked on a link from the Tencent Cloud Developer Community.
+  - The user scrolled through a Tencent Cloud Developer Community article on 'How to use Python to validate email addresses'.
+  - The user stayed on the 'email address validation python' Google search results page.
+  - The user typed 'python ', executed 'cmd+v', and pressed 'enter' several times in the 'email_filter.py' file.
+  - The user clicked on a link from CSDN's article on email verification using Python.
+  - The user scrolled and input text 'regular expression' in the browser.
+  - The user clicked on a Google search result page regarding 'email address validation python'.
+  - The user stayed on the 'email address validation python' Google search results page.
+  - The user scrolled and copied text using 'cmd+c' on a web page about regular expressions on Tencent Cloud's developer community.
+  - The user double-clicked to switch to a Chrome tab titled 'DeepSeek'.
+  - The user clicked to switch back to the 'chrome://newtab/' in Chrome.
+  - The user typed 'cmd terminal' and pressed 'Enter' within Visual Studio Code, interacting with the 'ProactiveDemandSensingAgent' project.
+  - The user typed 'cmd terminal' and pressed 'Enter' within Visual Studio Code, interacting with the 'ProactiveDemandSensingAgent' project.
+  - The user clicked and scrolled through the Google search results page for 'go language' in Chrome.
+  - The user scrolled and copied text using 'cmd+c' on a web page about regular expressions on Tencent Cloud's developer community.
+  - The user stayed on the 'email address validation python' Google search results page.
+  - The user typed 'go caps_lock yuyuanyuyan' and pressed 'Enter' in the 'DeepSeek' chat interface on Chrome.
+  - The user clicked to open Google's search results page for 'go language' in Chrome.
+  - The user scrolled through the Google search results for 'go language' in Chrome.
+  - The user clicked to open a new tab to 'All releases - The Go Programming Language' on the Go website.
+  - The user right-clicked and clicked several times on the Google search results page for 'go language', then navigated back to 'All releases - The Go Programming Language' on the Go website.
+  - The user typed 'cmdv' and navigated through multiple commands in an unspecified app.
+  - The user clicked, moved, and scrolled through multiple interactions within Visual Studio Code.
+  - The user navigated Google search results for 'comparison of go and python' and opened a Tencent Cloud article comparing Go and Python.
+  - The user interacted with the 'DeepSeek' chat tab by clicking, scrolling, and typing.
+writingassistant:
+  tasks:
+  - Conduct a detailed investigation and write a report comparing the performance, price, and user reviews of three newly released smartphones.
+  - Research and compare five popular remote work software tools (e.g., Zoom, Slack, Trello) and recommend the best one for the company.
+  - Analyze three healthy eating apps and write a blog post comparing their main features, user feedback, and ratings.
+  - Analyze course quality, prices, and user experience of five popular online learning platforms (e.g., Coursera, Udemy, edX).
+  - Study service providers, fee structures, and user reviews from other cities’ bike-sharing services and write a detailed report.
+  - Research and compare the product ranges, prices, and market positioning of three sustainable fashion brands and write an article.
+  - Research leading brands, technological advancements, and consumer preferences in the electric vehicle market and write a report.
+  - Compare features, prices, and user reviews of five home fitness equipment products.
+  - Investigate three eco-friendly products (e.g., biodegradable coffee cups, solar chargers), their availability, effectiveness, and consumer feedback, and write an article.
+  - Investigate and compare three personal finance apps and write a review article.
+  - Please assist me in compiling a list of top 5 universities globally for a master's program in Data Science. Include details about the application process, deadlines, course structure, and tuition fees. Also, provide a brief analysis of job prospects after graduation.
+  - I am planning to buy a new car. Could you help me compare the features and prices of the latest models of Tesla, Ford, and Toyota? Include details about range, charging time, safety features, and after-sales service. Also, provide a brief analysis of the pros and cons of each car.
+  - Compare the features, pricing, and user reviews of three popular cloud storage services (e.g., Google Drive, Dropbox, OneDrive).
+  - Research and compare the benefits, drawbacks, and user experiences of three different types of exercise routines (e.g., HIIT, yoga, strength training) and write a blog post.
+  - Analyze the customer service quality, pricing, and user reviews of three major mobile network providers and write a detailed comparison report.
+  - Investigate the latest trends, technological advancements, and user preferences in the electric scooter market and write an article.
+  - Compare the features, pricing, and user reviews of five popular meal kit delivery services.
+  - Research and compare the investment options, fees, and user satisfaction of three major online brokerage firms and write a detailed report.
+  - Conduct a detailed analysis of the job market, salary expectations, and growth prospects for three emerging tech fields (e.g., AI, blockchain, cybersecurity) and write a report.
+  - Compare the features, pricing, and user reviews of three popular online grocery delivery services and write a detailed article.
+  - Research and compare the effectiveness, side effects, and user reviews of three leading skincare products for acne treatment.
+  - Investigate the market trends, pricing strategies, and customer feedback of three major online marketplaces (e.g., Amazon, eBay, Alibaba) and write a detailed report.
+  sample_events:
+  - The user types 'brandResearch.md' in Visual Studio Code.
+  - The user works on the file 'brandResearch.md' in the project 'SustainableBrandResearch' in Visual Studio Code.
+  - The user types 'possiblesustainable fashion brands' in the Google search box.
+  - The user scrolls through the search results for 'sustainable fashion brands' on Google.
+  - The user writes Markdown notes about 'Svala,' a brand that includes handbags, purses, bags, and totes in Visual Studio Code.
+  - The user interacts with 'Svala - Luxury Vegan Handbags, Purses, Totes, Backpacks & Wallets' website.
+  - The user switches back to Visual Studio Code from the web browser.
+  - The user writes Markdown notes in Visual Studio Code about Katla's product pricing.
+  - The user returns to browsing various product pages on Katla's website.
+  - The user interacts with the 'Dresses' section on Katla's website to check prices.
+  - The user copies some text content using 'ctrl+c' while browsing Katla's website.
+  - The user clicked on the Google search bar and searched for 'How can real time trafic upadte help improve trafic'.
+  - The user clicked and moved the mouse to interact with the Google search results, particularly focusing on featured snippets.
+  - The user clicked and moved the mouse to interact with the Google search results, particularly focusing on featured snippets.
+  - The user returned to Google to perform a search on 'How can digital payment enhance traificrafic'.
+  - The user scrolled through the Google search results for 'How can digital payment enhance traffic?' and clicked relevant links.
+  - The user continued to scroll and interact with Google search results, focusing on the effects of digital payments on traffic management.
+  - The user moved the mouse and clicked the left button within Visual Studio Code.
+  - The user pressed and released the 'Shift' key while inputting text in the Google search bar.
+  - The user continued using the web application, remaining active in the browser.
+  - The user paused their activity briefly in Visual Studio Code.
+  - The user switched back to the web browser.
+  - The user placed further mouse clicks and movements along with keyboard inputs like finalizing a new project in Visual Studio Code.
+  - The user performed multiple actions in Visual Studio Code including typing, moving the mouse, and considering public transport improvements through digital payment systems.
+  - The user clicks the mouse, then types 'zhiengnegn shouji fa', and presses and releases the 'b' key in a web application.
+  - The user opens a new tab in the browser, the title of the page is 'new Tab'.
+  - The user types 'xiaomi 14Ultra' and uses 'ctrl_l' key, then scrolls the mouse multiple times in Microsoft Word.
+  - The user types 'ctrl_l then 83, 649-797 yuan', and scrolls the mouse multiple times in an application.
+  - The user enters a series of 'ctrl_l' inputs and continues scrolling and clicking the mouse while typing additional text, such as 'tedian jishen kangwan ,naishuai' in an application.
+  - The user interacts with a Bing search page, by scrolling the mouse and clicking, along with inputting text regarding smartphone releases in a web application.
+  - The user inputs text 'sabxubnxixing7' and scrolls the mouse multiple times in an application.
+  - User searches for 'mobile phone release' on Bing and lands on a search results page.
+  - User types 'baoliu 3,5ctrl_l .5mctrl_l erjikong' and scrolls the mouse in an application.
+  - The user clicks the mouse, types 'ctrl_l', and clicks the mouse again, having switched back to a web browser, and opens the IT之家 webpage titled '徕卡 Leitz Phone 3 手机发布'.
+  - The user types '240hz shuaxingshuaxinlblv' and clicks the mouse multiple times in an application.
+  - The user types 'yuaxisanxing ctrl_l ga' and presses the down key in a web browser.
+  - User inputs 'ctrl_l' with mouse interactions, clicks in an application.
+  - User inputs 'ctrl_l' and scrolls mouse multiple times on a Bing search page for '三星galaxy'.
+  - User types 'sanxing galaxy' and scrolls mouse multiple times in an application.
+  - The user scrolls the mouse, clicks, and types 'span zhichi 1-120hz zishiy shauaxinl2' along with more text and scrolls multiple times.
+  - User navigates Bing search results page for '三星galaxy'.
+  - The user switched to Microsoft Word.
+  - The user reverted back to the web browser.
+  - The user searched for 'yuancheng gognzuo ruanjian' in the web browser and pressed 'Enter'.
+  - The user searched for 'remote working software' in the web browser and pressed 'Enter'.
+  - The user opened a search result with the title 'remote working software - search' on Bing.
+  - The user resumed browsing on Bing search.
+  - The user continued exploring search result pages in Bing with multiple scrolling actions and clicking on specific results.
+  - The user searched a new set of results related to 'remote working software' on Bing.
+  - The user begins typing notes which include references to 'tablianjie', 'shouji', and 'zhichi', indicating possible content writing or research.
+  - The user resumed looking at web search results and continued exploring detailed reviews and comparisons of remote desktop software.
+  - The user browsed through additional pages about 'splashtop' from Bing search results.
+  - The user continued exploring evaluations of remote desktop software on Bing.
+  - The user made scroll actions in the web browser and opened different review pages.
+  - The user navigates to 'DeepSeek' on the web and types various commands and texts, including 'cmdv', and 'shift\nqingni yibuyibu jihua yigai zmzuo cmdacmdc\n'.
+  - The user clicks the left mouse button on 'Kimi.ai - 帮你看更大的世界' tab.
+  - The user types 'tv\n' on a new tab on the browser.
+  - The user scrolls and clicks several times on 'DeepSeek' and copies text using 'cmdc'.
+  - The user types 'diaoyan baogao \n' on a new search page titled '可降解咖啡杯 - Google 搜索'.
+  - The user scrolls and clicks on a research report page about biodegradable cups.
+  - The user types 'cmdw' to close a tab and continues with scrolls and clicks.
+  - The user types 'cmdw' to close a tab and continues with extensive scrolling and clicking on multiple pages.
+  - he user types 'tgithub \n' and searches for 'github' on a new tab in Google.
+  - The user types various commands and text including 'cmdv', scrolls, and clicks on the access page.
+  - The user scrolls and types 'cmdc' repeatedly.
+  - The user clicked the left mouse button and moved the mouse while using Visual Studio Code.
+  - The user clicked the left mouse button and moved the mouse within the ChatGPT web application.
+  - The user clicked the left mouse button, pasted using 'cmd+v', performed copy using 'cmd+c', and scrolled within DeepSeek and ChatGPT tabs.
+  - The user switched back to Visual Studio Code without any input.
+  - The user switched to Kimi.ai tab in the web browser again.
+  - The user moved the mouse and clicked within Microsoft Word.
+  - The user clicked the mouse and performed multiple 'cmd+v' actions in Microsoft Word.
+  - The user returned to the ChatGPT tab in the web browser.
+  - The user scrolled, clicked the mouse, and copied text ('cmd+c') within the DeepSeek tab.
+  - The user moved the mouse and scrolled several times within the DeepSeek tab.
+  - The user pasted ('cmd+v') and clicked the mouse within the ChatGPT tab and a Google Search page.
+  - The user typed text into a Google search box within the 'Money Manager Ex - Google 搜索' tab.
+  - The user clicked the mouse and scrolled on the Google search page.
+dailyassistant:
+  tasks:
+  - working in a institution, receive a e-mail from somebody, schedule a meeting with them.
+  - receive a message/notification from an instant messaging app about a task, respond the message by gathering the required information.
+  - open computer to check the history tasks from different source, update today's to-do list.
+  - Install a new software, like CAD, Photoshop, MatLab, etc., from the school's software center.
+  - Clean the kitchen. including wiping countertops, cleaning the sink, and washing the stove and microwave.
+  - Organize the wardrobe. donate or dispose of unwanted clothes and rearrange the remaining ones.
+  - Plan the weekly family menu. list the weekly recipes and prepare a shopping list.
+  - Repair household appliances. such as changing light bulbs and fixing a leaking faucet.
+  - Online shopping. compare prices and user reviews on different e-commerce platforms and purchase electronics.
+  - Grocery shopping. buy groceries and daily necessities according to the shopping list, paying attention to special offers.
+  - Buy gifts. choose suitable gifts for upcoming birthdays or holidays.
+  - Return or exchange items. handle the return or exchange of unsatisfactory products.
+  - Schedule a doctor's appointment. book a check-up or consultation via phone or online system.
+  - Fitness plan. create a weekly fitness plan including cardio and strength training.
+  - Healthy eating. research and try new healthy recipes, preparing meals for the week.
+  - Meditation and relaxation. set aside time daily for meditation or yoga practice.
+  - Bill payments. pay utility bills, rent, or loans online.
+  - Investment and finance. research and purchase suitable investment products or stocks.
+  - Tax filing. prepare and submit annual tax returns.
+  - House repairs. such as fixing wall cracks or maintaining the roof.
+  - plan family gatherings or friend dinners, including preparing activities and menus.
+  - update personal social media status and interact with friends.
+  - attend online courses or workshops to learn new skills such as programming or painting.
+  sample_events:
+  - The user receives an email notification from the Outlook app, titled 'Meeting Request from John Doe'.
+  - The user switches back to the Google homepage in the web browser.
+  - The user clicked on a Google search result page regarding 'email address validation python'.
+  - The user scrolled and copied text using 'cmd+c' on a web page about regular expressions.
+  - The user interacted with the 'ChatGPT' chat tab by clicking, scrolling, and typing.
+  - The user clicked and scrolled through the Google search results page for 'daily news' in Chrome.
+  - The user performs multiple scroll actions and types 'develop' among others, navigating through a search page titled 'swift ui - search' on Bing.
+  - The user clicked and moved the mouse to interact with the Google search results, particularly focusing on featured snippets.
+  - The user opens a new tab in the browser, the title of the page is 'new Tab'.
+  - User inputs 'ctrl_l' with mouse interactions, clicks in an application.
+  - The user browsed through additional pages about 'splashtop' from Bing search results.
+  - The user typed text into a Google search box within the 'Money Manager Ex - Google 搜索' tab.
+  - The user scrolls the mouse, clicks, and types 'span zhichi 1-120hz zishiy shauaxinl2' along with more text and scrolls multiple times.
+  - The user receives a notification from the 'WeChat' desktop app, reminding them of a task.
+  - The user do not perform any specific actions in the 'WeChat' desktop app.
+  - The user do not perform any specific actions in the Web Browser.
+  - The user switched to Microsoft Excel and do not perform any specific actions.
+  - The user open the 'To-Do List' application and do not perform any specific actions.
+  - The user scrolls and types 'cmdc' repeatedly.
+  - The user receives a notification from the 'Youtube' web application, the subscribed channel 'Tech Insider' uploaded a new video.
+  - The user receives a notification from the 'X.com' web application, a new follower 'JohnDoe' followed the user.
+  - The user receives a notification from the 'Instagram' mobile application, a friend 'Alice' tagged the user in a post.
+  - The user receives a notification from the Calendar app, reminding them of a scheduled meeting.
+  - The user receives a notification from the 'Slack' desktop app, a new message in the 'General' channel.
+  - The user receives a notification from the 'Zoom' desktop app, a meeting is about to start.

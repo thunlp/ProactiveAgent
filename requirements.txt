@@ -1,0 +1,14 @@
+openai
+tiktoken
+tenacity
+tqdm
+pynput
+aw_client
+pyyaml
+codelinker == 0.3.17
+colorlog
+pandas
+uuid
+jsonlines
+gradio
+pyperclip

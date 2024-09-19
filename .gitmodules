@@ -1,0 +1,3 @@
+[submodule "envs/aw-watcher-web"]
+	path = envs/aw-watcher-web
+	url = https://github.com/luyaxi/aw-watcher-web.git

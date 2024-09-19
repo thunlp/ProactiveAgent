@@ -1,0 +1,6 @@
+#scroll-box {
+    height: 400px;
+    /* 你可以根据需要设置高度 */
+    overflow-y: auto !important;
+    /* 添加竖直滚动条 */
+}

@@ -1,0 +1,5 @@
+macos_notifications
+fastapi
+uvicorn
+docstring_parser
+pyperclip

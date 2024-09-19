@@ -1,0 +1,42 @@
+{
+    "real_average":{
+        "theme": "All",
+        "files": [
+            "code_11.json",
+            "code_12.json",
+            "code_13.json",
+            "code_14.json",
+            "code_15.json",
+            "code_16.json",
+            "writing_11.json",
+            "writing_12.json",
+            "writing_13.json",
+            "writing_14.json",
+            "writing_15.json",
+            "writing_16.json"
+        ]
+
+    },
+    "real_coding": {
+        "files": [
+            "code_11.json",
+            "code_12.json",
+            "code_13.json",
+            "code_14.json",
+            "code_15.json",
+            "code_16.json"
+        ],
+        "theme": "Coding"
+    },
+    "real_writing": {
+        "files": [
+            "writing_11.json",
+            "writing_12.json",
+            "writing_13.json",
+            "writing_14.json",
+            "writing_15.json",
+            "writing_16.json"
+        ],
+        "theme": "Writing"
+    }
+}

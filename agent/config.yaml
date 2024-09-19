@@ -1,0 +1,64 @@
+models:
+  gpt-3.5-turbo:    
+    - api_key: sk-xxx
+      model: gpt-3.5-turbo
+  gpt-3.5-turbo-16k:
+    - api_key: sk-xxx
+      api_type: azure
+      api_version: XXX
+      engine: GPT-35-Turbo-16k
+      base_url: https://api.openai.com/v1
+      # you can use any kwargs supported by openai.ChatCompletion here
+    - api_key: sk-xxxx
+      organization: org-xxxxxx
+      model: gpt-3.5-turbo-16k
+  gpt-4:    
+    - api_key: sk-xxx
+      model: gpt-4
+  gpt-4-32k:
+    - api_key: sk-xxx
+      api_type: XXX
+      api_version: XXX
+      engine: gpt4-32
+  gpt-4-1106:    
+    - api_key: sk-xxx
+      model: gpt-4-1106
+  gpt-4-0125-preview:    
+    - api_key: sk-xxx
+      model: gpt-4-0125-preview
+  gpt-4o:
+    - api_key: sk-xxx # for choosing gpt-4o, you will change the api-key here.
+      model: gpt-4o
+      # base_url: https://api.openai.com/v1 # You should also add your base_url here.
+
+embedding_models:
+  text-embedding-3-large:
+    - api_key: sk-xxx
+  text-embedding-ada-002:
+    - api_key: sk-xxx
+  text-embedding-3-small:
+    - api_key: sk-xxx
+
+default_completion_kwargs:
+  model: gpt-4o # set your model name here, and change the api_key in the models section. You may add your own model.
+  embedding_model: your embedding model # text-embedding-3-large
+  temperature: 0.2
+  request_timeout: 60
+
+# The activity Watcher default port is 5600. If you happened to change the port, please change it here consistently.
+activity_port: 5600
+# Check the timeline to get the web bucket name, it may differ because of the chromes.
+# For Edge users, it is suffixed with 'edge', for chrome users, it is suffixed with 'chrome' 
+web_bucket_name: 'aw-watcher-web-edge'
+# How often the ragent trys to raise a proposal. The unit is second.
+interval: 15
+# In case aw detect another client_hostname, you may change it here.(happens in MacOS)
+# If None, the hostname will be set automatically, check http://localhost:5600/#/timeline as well to find your client.
+# A host name is the suffix of the default bucket name, e.g. aw-watcher-windows_<client_hostname>
+host_name: null
+# The app name of your chorme extension. If your browser is not in this list, please add it so we can detect browser activity.
+# To see your chorme name, you could check your top applications or export your data and see the 'app' field for your chrome use.
+# the default is for windows Edge chorme. For macOS, it might be 'Safari' or 'Google Chrome'.
+app_names:
+- "explorer.exe"
+- "msedge.exe"
