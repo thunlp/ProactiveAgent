@@ -62,7 +62,7 @@ More details about the data collection and annotation can be found [here](datase
 
 Clone this repository and navigate to the proactive demand sensing agent folder
 ```bash
-git clone git@github.com:OpenBMB/ProactiveAgent
+git clone git@github.com:thunlp/ProactiveAgent
 cd ProactiveAgent
 ```
 
@@ -166,15 +166,15 @@ We report the performance of the Proactive Agent on the test set of the [Proacti
 If you find this project useful in your research, please consider citing it:
 ```
 @misc{2024,
-  author = {OpenBMB},
+  author = {THUNLP},
   title = {ProactiveAgent},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/openBMB/ProactiveAgent}}
+  howpublished = {\url{https://github.com/thunlp/ProactiveAgent}}
 }
 ```
 
 ## Friendly Links
-- [ChatDev](https://github.com/OpenBMB/ChatDev)
+- [ChatDev](https://github.com/openbmb/ChatDev)
 - [Activity Watcher](https://activitywatch.net/)

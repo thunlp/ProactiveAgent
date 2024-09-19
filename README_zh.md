@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/4a9152e8-15ee-4bdf-a917-52a9e6b4f375
 ## 📦 下载
 克隆该项目，并且进入主动智能体文件夹下。
 ```bash
-git clone git@github.com:OpenBMB/ProactiveAgent
+git clone git@github.com:thunlp/ProactiveAgent
 cd ProactiveAgent
 ```
 
@@ -158,15 +158,15 @@ __敬请期待__
 ## 引用
 如果你认为该项目对你的研究有帮助，请考虑引用：
 ```@misc{2024,
-  author = {OpenBMB},
+  author = {THUNLP},
   title = {ProactiveAgent},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/openBMB/ProactiveAgent}}
+  howpublished = {\url{https://github.com/thunlp/ProactiveAgent}}
 }
 ```
 
 ## 友链
-- [ChatDev](https://github.com/OpenBMB/ChatDev)
+- [ChatDev](https://github.com/openbmb/ChatDev)
 - [Activity Watcher](https://activitywatch.net/)
