@@ -5,7 +5,7 @@ tqdm
 pynput
 aw_client
 pyyaml
-codelinker == 0.3.17
+codelinker
 colorlog
 pandas
 uuid

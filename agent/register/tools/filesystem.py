@@ -21,7 +21,7 @@ def _check_ignorement(path: str) -> bool:
 
 
 # This strucure helps to get the overall dir for the current workspace.
-@toolwrapper()
+@toolwrapper(visible=False)
 def print_filesys_struture(root,return_root=False) -> str:
     """Generates a tree-like structure of all files and folders in the workspace.
     Recursively walks through directories, displaying files and directories. If a directory exceeds
@@ -75,7 +75,7 @@ def read_from_file(filepath: str, line_number: int = 1) -> str:
 
     :param string filepath: Absolute path from workspace root.
     :param integer? line_number: Optional. Starting line number; supports negative values for reverse indexing. Defaults to 1.
-    
+
     :return string: Content from the specified line, prefixed with "line_number: "."""
     full_path = filepath
 
@@ -89,7 +89,7 @@ def read_from_file(filepath: str, line_number: int = 1) -> str:
         lines = f.readlines(int(1e5))
     if len(lines) == 0:
         return ""
-    
+
     read_count = 0
     if not (abs(line_number) - 1 <= len(lines)):
         raise ValueError(f"Line number {line_number} is out of range.")
@@ -109,6 +109,71 @@ def read_from_file(filepath: str, line_number: int = 1) -> str:
         content += line
         read_count += len(line)
         index += 1
-        
+
     print(content)
     return content
+
+
+@toolwrapper()
+def rename_file(original_path:str, new_name:str):
+    """Renames a file and open the folder for the user to check the file.
+
+    :param string original_path: Absolute path from workspace root.
+    :param string new_name: New name for the file.
+    """
+    directory = os.path.dirname(original_path)
+    new_path = os.path.join(directory, new_name)
+    os.rename(original_path, new_path)
+    # after renaming, open the file folder for the user to check the file
+    if os.name == 'nt':  # For Windows
+        os.system(f'explorer /select,{new_path}')
+    elif os.name == 'posix':  # For macOS and Linux
+        if sys.platform == 'darwin':  # macOS
+            os.system(f'open -R {new_path}')
+        else:  # Linux
+            os.system(f'xdg-open {directory}')
+    return f"File {original_path} renamed to {new_name}."
+
+
+# @toolwrapper()
+# def read_pdf(filepath: str, pages:int = 3) -> str:
+#     """Reads content from a PDF file within the workspace.
+
+#     :param string filepath: Absolute path from workspace root.
+#     :param integer? pages: Optional. Number of pages to read. Defaults to 3.
+
+#     :return string: Content from the PDF file."""
+#     from PyPDF2 import PdfReader
+
+#     full_path = filepath
+#     if _check_ignorement(full_path) or not os.path.isfile(full_path):
+#         raise FileNotFoundError(f"File {filepath} not found in workspace.")
+#     if not os.path.exists(full_path):
+#         raise FileNotFoundError(f"File {filepath} not found in workspace.")
+
+#     reader = PdfReader(full_path)
+#     content = ''
+#     for page in reader.pages[:pages]:
+#         content += page.extract_text()
+#     return content
+
+# @toolwrapper()
+# def read_docx(filepath: str) -> str:
+#     """Reads content from a DOCX file within the workspace.
+
+#     :param string filepath: Absolute path from workspace root.
+
+#     :return string: Content from the DOCX file."""
+#     from docx import Document
+
+#     full_path = filepath
+#     if _check_ignorement(full_path) or not os.path.isfile(full_path):
+#         raise FileNotFoundError(f"File {filepath} not found in workspace.")
+#     if not os.path.exists(full_path):
+#         raise FileNotFoundError(f"File {filepath} not found in workspace.")
+
+#     doc = Document(full_path)
+#     content = ''
+#     for para in doc.paragraphs:
+#         content += para.text + '\n'
+#     return content

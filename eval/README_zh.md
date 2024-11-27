@@ -12,7 +12,7 @@ ProactiveBench 是用来评估主动智能体的基准点。其包含一个数�
 
 ## 奖励模型评估
 奖励模型用于评估主动智能体的性能。
-你可以在此(敬请期待)下载Reward模型并且通过 [VLLM](https://github.com/vllm-project/vllm) 等框架以搭建并提供 OpenAI 风格的 API。
+你可以在此(敬请期待)下载奖励模型并且通过 [VLLM](https://github.com/vllm-project/vllm) 等框架以搭建并提供 OpenAI 风格的 API。
 
 在此之后，你应当修改 `reward_model_scoring.py` 脚本并设置地址为自己模型的地址，运行脚本
 ```bash

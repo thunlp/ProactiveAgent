@@ -1,7 +1,5 @@
 # GYM Configuration
 
-To run the gym, you should first create a `private.toml` file under `gym` folder with a format of:
-
 After that, run the following command.
 
 ```bash

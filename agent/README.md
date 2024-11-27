@@ -50,17 +50,15 @@ pip install -r requirements_mac.txt
 
 4. With the previous terminal open, open a new terminal and run command:
     ```bash
-    python ragent.py --web [the web bucket name] --apps [the chromes you want to monitor]
-    # python ragent.py --web aw-watcher-web-edge --apps explorer.exe,msedge.exe
+    python ragent.py --apps [the chromes you want to monitor]
+    # python ragent.py --apps explorer.exe,msedge.exe
     ```
     There are several params that you should notice:
-    - `--web`: This is the web bucket name of your ActivityWatcher, it might differ with your chromes.
     - `--apps`: The chrome names displayed in the ActivityWatcher. Based on different platforms and types of chromes, the apps' name varies, so we need you to find the app name through the window bucket of ActivityWatcher, and pass them separated in a comma `,`.
     - `--interval`: How often the agent will try to make a offer. Default to 15, the unit is second.
-    - `--host`: Our agent will try to use the default hostname retrieved from the ActivityWatcher client, if it happens that it is not your host, you should pass it here.
         A host name is the suffix of the default bucket name, e.g. `aw-watcher-windows_<client_hostname>`
-    - `--activity_port`: The port where ActivityWatcher holds and monitors, default is `5600`, you don't need to modify it unless you changed the port of the ActivityWatcher.
+    - `--port`: The port where ActivityWatcher holds and monitors, default is `5600`, you don't need to modify it unless you changed the port of the ActivityWatcher.
 
     If the agent runs successfully, the terminal will show a configuration information and a message of `Demo running Started.`
-    
+
 After that, you can open your chrome and/or vscode, and the agent will start to work.

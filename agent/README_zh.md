@@ -50,16 +50,13 @@
 
 4. 保留之前的控制台，打开新的控制台并运行指令
    ```bash
-    python ragent.py --web [the web bucket name] --apps [the chromes you want to monitor]
-    # python ragent.py --web aw-watcher-web-edge --apps explorer.exe,msedge.exe
+    python ragent.py --apps [the chromes you want to monitor]
+    # python ragent.py --apps explorer.exe,msedge.exe
     ```
     以下一些参数你值得留意：
-    - `--web`: 这是 ActivityWatcher 的 Web 桶名称，它可能会根据你使用的浏览器类型不同而改变。
     - `--apps`: ActivityWatcher 所显示的浏览器名。由于操作平台和浏览器的不同，app 名称也会不同，我们需要你去通过 ActivityWatcher 的 window 桶找到 app 名称，并且通过半角符号 `,` 分割并传入。
     - `--interval`: 智能体尝试提供帮助的频率. 默认为 15，单位为秒。
-    - `--host`: 我们的智能体会尝试使用从 ActivityWatcher 客户端处获取的主机名作为默认主机名，如果这不是你的主机名，则在这里传入。
-      一个主机名是默认桶的后缀，如 `aw-watcher-windows_<client_hostname>`。
-    - `--activity_port`: ActivityWatcher所持有和监听的端口，默认为 `5600`, 除非你修改了 ActivityWatcher 的端口，否则无需传入内容。
+    - `--_port`: ActivityWatcher所持有和监听的端口，默认为 `5600`, 除非你修改了 ActivityWatcher 的端口，否则无需传入内容。
     如果智能体运行成功，控制台将会展示配置信息以及信息 `Demo running Started.`
 
 在这之后，你就可以打开你的浏览器 和/或 vscode， 我们的智能体将会开始工作。

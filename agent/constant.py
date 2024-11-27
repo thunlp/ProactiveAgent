@@ -2,15 +2,28 @@
 This file stores some necessary constants.
 You may modify some constants according to your needs.
 '''
+# For common use.
+from register import ToolRegister
+toolreg = ToolRegister()
+
+# define how the agent will return a proposal.
+from pydantic import BaseModel, Field
+from typing import Optional
+class AgentResponse(BaseModel):
+    Purpose: str = Field(description = "The purpose of the last action from the user.")
+    Thoughts: str = Field(description = "Your thoughts on the user's actions.")
+    Proactive_Task: Optional[str] = Field(description = "a candidate task that you generate to help the user, or an empty list if the user need no help.")
+    Response: Optional[str] = Field(description = "The string you use to inform the user about your assistance if you propose a task.")
+    Operation: Optional[str] = Field(description = "A tool call string that follows a certain format given.")
+
 import sys
-
-LAZY_UPDATE_INTERVAL_MILISECONDS = 1
-
 # If in your platform, the name of the vscode is different, please change it here.
 if sys.platform.startswith("win"):
     VSCODE_NAME = "Code.exe"
 else:
     VSCODE_NAME = "Code"
+
+LAZY_UPDATE_INTERVAL_MILISECONDS = 1
 
 # This stores the hotkeys that we want to detect.
 HOTKEY_DICT = {
@@ -58,13 +71,9 @@ HOTKEY_DICT = {
     r"<57>"   : ['9'],
 }
 
-# --- Activity Watcher Setting ends. ---
-
-# You should first run `main.py` or  `register_hkey_aumid.py` first to get a `appid.txt` file. Or it will be an error.
+# Get AUMID for windows user.
 import os
-
 if os.name == 'nt':
-    
     if os.path.exists(os.path.join(os.path.split(__file__)[0],'appid.txt')):
         with open(os.path.join(os.path.split(__file__)[0],'appid.txt')) as f:
             AUMID = f.read().strip()
@@ -75,17 +84,11 @@ if os.name == 'nt':
             AUMID = response.json()['appid']
         except:
             raise Exception("No appid is detected, please run `main.py` or `register_hkey_aumid.py` first.")
+else:
+    AUMID = None
 
 
-
-# For Ablation study.
-# Set this to True, the agent will not deduct the profile of the user, and propose directly.
-IGNORE_PROFILE = False
-# Set this to True, the agent will propose exact candidates.
-# (In early version we let the agent to decide how many candidates it should propose.)
-EXACT_CANDIDATE = False
-
-# They cannot both set as True.
-assert not (IGNORE_PROFILE and EXACT_CANDIDATE), "settings conflict"
-
-
+# For android use.
+MAX_TRANSFER_SIZE = (1024 ** 2) * 50
+BUFFER_SIZE = 1024**2
+TIMEOUT = 60  # seconds

@@ -8,7 +8,7 @@ If the assistant ask you to generate code, you should only generate code without
 """
 
 @toolwrapper(name="chat",visible=True)
-async def chat(messages: str = "Who are you?", 
+async def chat(messages: str = "Who are you?",
                 api_key :str = "",
                 base_url:str = ""):
     """
@@ -36,7 +36,7 @@ async def chat(messages: str = "Who are you?",
     except Exception as e:
         print(str(e))
         return {'status': 'error', 'message': str(e)}
-    
+
 if __name__ == "__main__":
     import asyncio
     asyncio.run(chat("Who are you?"))

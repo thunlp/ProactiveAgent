@@ -12,7 +12,8 @@
   <a href="#overview">Model</a> •
   <a href="#data">Data Release</a> •
   <a href="#usage">Usage</a> •
-  <a href="#citation">Citation</a>
+  <a href="#citation">Citation</a> •
+  <a href="https://arxiv.org/abs/2410.12361">Paper</a>
 
 </p>
 
@@ -51,7 +52,7 @@ In the future, we will continually improve the data quality and increase the cov
 
 | Settings | Coding | Writing | Daily Life | Total |
 |:-------------:|:------:|:-----:|:-----:|:-----:|
-|   Inst.Num    | 23 |  23 | 22 | 68 |
+|   Inst.Num    | 46 |  46 | 44 | 136 |
 |   Events Num  | 2275 |  2354 | 2161 | 6790 |
 
 All the training instances for the Proactive Agent were generated from our [GYM](gym/README.md).
@@ -66,8 +67,10 @@ git clone git@github.com:thunlp/ProactiveAgent
 cd ProactiveAgent
 ```
 
-Install Package (python>=3.10)
+Install Package
 ```bash
+conda create -n activeagent python=3.10
+conda activate activeagent
 pip install -r requirements.txt
 ```
 
@@ -80,7 +83,7 @@ pip install -r requirements.txt
   - This Extension is not tested under `Safari`.
 - There is an official extension for vscode user, you may download it from the [marketplace](https://marketplace.visualstudio.com/items?itemName=activitywatch.aw-watcher-vscode) or search for `aw-watcher-vscode` in the extensions in your vscode and install it.
 
-To check whether the installation is complete, please open your browser and go to `http://localhost:5600/#/timeline` to check if there are four traces displaying in the window(`afk`,`vscode`,`window`,`web`). 
+To check whether the installation is complete, please open your browser and go to `http://localhost:5600/#/timeline` to check if there are four traces displaying in the window(`afk`,`vscode`,`window`,`web`).
 
 
 ## 🚀 Usage
@@ -149,16 +152,15 @@ We define the following metrics:
 
 We report the performance of the Proactive Agent on the test set of the [ProactiveBench](eval/README.md).
 
-| Model                       | Recall  | Precision | Accuracy | False-Alarm | F1-Score  |
-|-----------------------------|---------|-----------|----------|-------------|-----------|
-| Claude-3-Sonnet             | 0.6321  | 0.5000    | 0.5330   | 0.5000      | 0.5583    |
-| Claude-3.5-Sonnet           | 0.9663  | 0.4195    | 0.4626   | 0.5805      | 0.5850    |
-| GPT-4o-mini                 | 1.0000  | 0.3467    | 0.3524   | 0.6533      | 0.5149    |
-| GPT-4o                      | 1.0000  | 0.4956    | 0.4978   | 0.5044      | __0.6627__  |
-| LLaMA 3.1 8B                | 0.9877  | 0.3571    | 0.3612   | 0.6429      | 0.5246    |
-| LLaMA 3.1 8B Proactive      | 0.9600  | 0.4550    | 0.4758   | 0.5450      | 0.6174    |
-| Qwen2 7B Instruct           | 1.0000  | 0.4361    | 0.4361   | 0.5639      | 0.6074    |
-| Qwen2 7B Instruct Proactive | 1.0000  | 0.4978    | 0.5066   | 0.5022      | **0.6647** |
+| Model                  | Recall  | Precision | Accuracy | False-Alarm | F1-Score  |
+|:----------------------:|:-------:|:---------:|:--------:|:-----------:|:---------:|
+| GPT-4o-mini            | 100.00% | 35.28%    | 36.12%   | 64.73%      | 52.15%    |
+| GPT-4o                 | 98.11%  | 48.15%    | 49.78%   | 51.85%      | 64.60%    |
+| Claude-3.5-Sonnet      | 97.89%  | 45.37%    | 49.78%   | 54.63%      | 62.00%    |
+| LLaMA-3.1-8B           | 98.86%  | 38.16%    | 39.06%   | 61.84%      | 55.06%    |
+| LLaMA-3.1-8B-Proactive | 99.06%  | 49.76%    | 52.86%   | 50.24%      | 66.25%    |
+| Qwen2-7B               | 98.02%  | 44.00%    | 43.61%   | 56.00%      | 60.74%    |
+| Qwen2-7B-Proactive     | 100.00% | 49.78%    | 50.66%   | 50.22%      | 66.47%    |
 
 
 

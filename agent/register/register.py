@@ -8,9 +8,7 @@ from typing import Optional, Callable, Any, Type, Union
 from .label import ToolLabels
 from .exceptions import ToolNotFound, EnvNotFound, ToolRegisterError
 
-
 logger = logging.getLogger()
-
 
 def get_func_name(func: Callable, env = None) -> str:
     if env is None or not hasattr(env, 'env_labels'):
@@ -29,7 +27,7 @@ class Tool(Callable):
 
 class ToolRegister:
     def __init__(self,
-                 ):
+                ):
         # load modules
         self.tools: dict[str, Tool] = {}
 
