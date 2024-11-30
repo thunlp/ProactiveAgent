@@ -20,12 +20,8 @@ jsonlines
 pyperclip
 codelinker
 docstring_parser
-
-[windows]
-windows-toasts
-
-[macos]
-macos_notifications
+windows-toasts; sys_platform=='windows'
+macos_notifications; sys_platform=='darwin'
 
 
 
