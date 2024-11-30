@@ -40,15 +40,16 @@ pip install -r requirements_mac.txt
 ```
 2. Configure necessary information.
   The configuration contains api_keys for LLM, some settings for the activity watcher. To edit and detected by our script, you will **copy** the template file `./gym/example_config.toml`, **rename** it as `./gym/private.toml` and **edit** the configuration related to the LLM calling.
+  **To directly run the model, you should configurate an api_key named activeagent, which will be directly used for calling API. See the comment in example_config.toml**.
 
-3. Running a server.
+1. Running a server.
     ```bash
     python main.py
     ```
     This server is in charge of the functions the agent will be using. If succeeded, the terminal will show information.
     - For windows user, this server will register an AUMID for our agent, which is necessary for our notifications. The script will create a `appid.txt` file, which contains the AUMID. **DO NOT DELETE THIS FILE UNLESS YOU WANT TO GENERATE A NEW AMUID**.
 
-4. With the previous terminal open, open a new terminal and run command:
+2. With the previous terminal open, open a new terminal and run command:
     ```bash
     python ragent.py --apps [the chromes you want to monitor]
     # python ragent.py --apps explorer.exe,msedge.exe

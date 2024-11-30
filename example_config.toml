@@ -13,6 +13,10 @@ model = "gpt-4o"
 # base_url = [your base_url]
 # model = "{model_name for api call}"
 
+# To run active agent directly, fill the following fields.
+[[api_keys.activeagent]]
+api_key = "sk-"
+model = "gpt-4o"
 
 [request]
 default_completions_model = "gpt-4o"
