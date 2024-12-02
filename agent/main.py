@@ -3,7 +3,7 @@ This file will set up a local server for our demo, making response for the tool 
 You should first host a server by running this file, then to run the `ragent.py`
 '''
 import os
-from typing import Literal, Dict
+from typing import Literal, Dict, Optional
 
 import fastapi
 import uvicorn
@@ -68,7 +68,7 @@ async def search(query: str, search_engine:str = 'bing') -> Dict[str,str]:
     return await toolreg["search"](query, search_engine)
 
 @app.get('/chat')
-async def chat(messages: str, api_key:str = "", base_url:str = "") -> Dict[str,str]:
+async def chat(messages: str, api_key:str = "", base_url:Optional[str] = None) -> Dict[str,str]:
     """
     chat with ChatGPT-3.5-turbo. This function will call the chat tool, and pass the message to the chatbot, the response will be copied in the clipboard. Details in register/tools/chat.py
     You can modity the default model by modifying the `model` variable in `register/tools/chat.py`.
@@ -76,7 +76,7 @@ async def chat(messages: str, api_key:str = "", base_url:str = "") -> Dict[str,s
     Args:
         messages (str): The message to be sent to the chatbot.
         api_key (str, optional):  Defaults to "".
-        base_url (str, optional):  Defaults to "".
+        base_url (str, optional):  Defaults to None.
 
     Returns:
         Dict[str,str],
@@ -124,7 +124,7 @@ async def rename_file(original_path:str, new_name:str) -> Dict[str,str]:
     else, return {'status': 'error', 'error': error message}
     """
     try:
-        return {'status': 'success', 'message': toolreg["rename_file"](original_path, new_name)} 
+        return {'status': 'success', 'message': toolreg["rename_file"](original_path, new_name)}
     except Exception as e:
         return {'status': 'error', 'message': str(e)}
 

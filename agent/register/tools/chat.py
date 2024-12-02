@@ -2,6 +2,8 @@ from ..wrapper import toolwrapper
 from openai import OpenAI
 import pyperclip
 
+from typing import Optional
+
 BASIC_PROMPT = """You are a helpful assistant, here is a observation of the user's event, and another assistance is asking you to help them to solve a problem. Please help them to solve the problem, and give them a solution. You should't output anything more than the solution. Only ouptut the content which the user need.
 If the assistant ask you to generate code, you should only generate code without any other words, if the assistant ask you to write something, you should only write something without any other words.
 {infos}
@@ -10,7 +12,7 @@ If the assistant ask you to generate code, you should only generate code without
 @toolwrapper(name="chat",visible=True)
 async def chat(messages: str = "Who are you?",
                 api_key :str = "",
-                base_url:str = ""):
+                base_url:Optional[str] = None):
     """
     This function is used to chat with the OpenAI API, or to chat with the gpt. The funtion will copy the response to the clipboard, and return a status indicating if the function is successful or not.
     If browser is an alternative, please use browser as much as possible.

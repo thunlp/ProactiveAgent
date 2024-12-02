@@ -761,7 +761,10 @@ class Executor(Trigger):
 
         self.model = config.model
         self.api_key = config.api_key
-        self.base_url = config.base_url
+        try:
+            self.base_url = config.base_url
+        except:
+            self.base_url = None
 
     def receive(self, response:Dict, exec_args:Dict):
 
