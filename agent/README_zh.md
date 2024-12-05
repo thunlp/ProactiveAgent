@@ -50,12 +50,13 @@
     - 对于 windows 用户，该服务器将会为我们的智能体注册一个 AUMID, 这对于我们的桌面通知是必须的。脚本将会创建一个 `appid.txt` 文件，其中包含我们的 AUMID. **请勿删除此文件，除非你想要生成一个新的 AUMID**。
 
 4. 保留之前的控制台，打开新的控制台并运行指令
-   ```bash
-    python ragent.py --apps [the chromes you want to monitor]
-    # python ragent.py --apps explorer.exe,msedge.exe
+    ```bash
+    python ragent.py --platform PC [--chromes <你希望监听的浏览器名称> --interval <每轮之间的间隔>]
+    python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
     ```
-    以下一些参数你值得留意：
-    - `--apps`: ActivityWatcher 所显示的浏览器名。由于操作平台和浏览器的不同，app 名称也会不同，我们需要你去通过 ActivityWatcher 的 window 桶找到 app 名称，并且通过半角符号 `,` 分割并传入。
+    参数说明：
+    - `--platform`: 你希望协助的操作平台。当前可以运行 `PC` demo, `Mobile` demo 将会在未来进一步推出。
+    - `--apps`: ActivityWatcher 所显示的浏览器名。由于操作平台和浏览器的不同，app 名称也会不同，我们需要你去通过 ActivityWatcher 的 window 桶找到 app 名称，并且通过半角符号 `,` 分割并传入（将在之后更新，为其不便深感抱歉）
     - `--interval`: 智能体尝试提供帮助的频率. 默认为 15，单位为秒。
     - `--_port`: ActivityWatcher所持有和监听的端口，默认为 `5600`, 除非你修改了 ActivityWatcher 的端口，否则无需传入内容。
     如果智能体运行成功，控制台将会展示配置信息以及信息 `Demo running Started.`

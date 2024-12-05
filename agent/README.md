@@ -51,11 +51,12 @@ pip install -r requirements_mac.txt
 
 2. With the previous terminal open, open a new terminal and run command:
     ```bash
-    python ragent.py --apps [the chromes you want to monitor]
-    # python ragent.py --apps explorer.exe,msedge.exe
+    python ragent.py --platform PC [--chromes <the chrome you want to watch> --interval <interval seconds for each turn>]
+    python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
     ```
     There are several params that you should notice:
-    - `--apps`: The chrome names displayed in the ActivityWatcher. Based on different platforms and types of chromes, the apps' name varies, so we need you to find the app name through the window bucket of ActivityWatcher, and pass them separated in a comma `,`.
+    - `platform`: The platform you are going to run. Now you can run the `PC` demo, the `Mobile` demo will be released in tht future.
+    - `--apps`: The chrome names displayed in the ActivityWatcher. Based on different platforms and types of chromes, the apps' name varies, so we need you to find the app name through the window bucket of ActivityWatcher, and pass them separated in a comma `,`(will update in the future, sorry for the inconvenience.)
     - `--interval`: How often the agent will try to make a offer. Default to 15, the unit is second.
         A host name is the suffix of the default bucket name, e.g. `aw-watcher-windows_<client_hostname>`
     - `--port`: The port where ActivityWatcher holds and monitors, default is `5600`, you don't need to modify it unless you changed the port of the ActivityWatcher.
