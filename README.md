@@ -22,6 +22,7 @@
 This project (Proactive Agent) aims to construct a fully active agent, who may anticipate user's requirements and take the initiative, offering assistance and suggesting actions without explicit requests from user. We achieve this by developing a data collection and generation pipeline, building an automatic evaluator and training agent within data generated. For now, we provide the whole collection and generation pipeline, the datasets, and the corresponding evaluation scripts, and the prompts to finetune LLM for proactive agent.
 
 *Read this in [中文](README_zh.md).*
+*Read this in [日本語](README_ja.md).*
 
 ## Overview
 
