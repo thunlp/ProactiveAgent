@@ -60,6 +60,7 @@ CL_CFGFILE = os.getenv(key = 'CODELINKER_CFG',
                     default = default_cfg_file)
 
 codelinker_config = CodeLinkerConfig.from_toml(CL_CFGFILE)
+codelinker_config.request.default_completions_model = "activeagent"
 codelinker_config.request.use_cache = False
 codelinker_config.request.save_completions = True
 

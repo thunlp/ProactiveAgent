@@ -36,6 +36,7 @@ logger.info(f'Using config file: {CL_CFGFILE}')
 if not os.path.exists(CL_CFGFILE):
     raise FileNotFoundError("No Config File Found. Please first set your configuration file by either through environment variable CODELINKER_CFG or refer to readme.")
 codelinker_config = CodeLinkerConfig.from_toml(CL_CFGFILE)
+codelinker_config.request.default_completions_model = "activeagent"
 codelinker_config.request.use_cache = False
 codelinker_config.request.save_completions = False
 

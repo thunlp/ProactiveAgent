@@ -33,6 +33,7 @@ To fully experience the proactive agent, you will have to install additional dep
 1. Configure necessary information.
   The configuration contains api_keys for LLM, some settings for the activity watcher. To edit and detected by our script, you will **copy** the template file `../example_config.toml`, **rename** it as `../private.toml` and **edit** the configuration related to the LLM calling.
   **To directly run the model, you should configurate an api_key named activeagent, which will be directly used for calling API. See the comment in example_config.toml**.
+  It is suggested that you also change the `default_completion_model` to `activeagent` to avoid potential KeyErrors.
 
 1. Running a server.
     ```bash

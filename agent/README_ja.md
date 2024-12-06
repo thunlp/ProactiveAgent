@@ -33,6 +33,7 @@
 1. 必要な情報を設定します。
   設定情報には LLM の api_key と ActivityWatcher の設定が含まれます。スクリプトによって検出されるように、テンプレートファイル `../example_config.toml` を **コピー** し、`../private.toml` に **リネーム** して、LLM 呼び出しに関連する設定を **編集** します。
   **モデルを直接実行するには、activeagent という名前の API キーを設定する必要があります。これは直接呼び出しに使用されます。example_config のコメントを参照してください。**
+  同様に、KeyErrorエラーの可能性を回避するために、`default_completion_model ` を `activeagent` に置き換えることをお勧めします。
 
 2. サーバーを実行します。
    コマンドを実行します。

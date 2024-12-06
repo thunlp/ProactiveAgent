@@ -31,6 +31,7 @@
 1. 配置必要信息
   配置信息包括大语言模型的 api_key, 以及对于 ActivityWatcher 的必要设置，要编辑并被我们的脚本读入，你需要 **复制** 模板文件 `../example_config.toml`, **重命名**为 `../private.toml` 并 **编辑** 其中与 LLM 调用有关的参数。
   **为了能够直接运行模型，你应当配置一个名称为 activeagent 的令牌，该令牌将会被直接调用。请参考 example_config 的注释。**
+  同样建议您将 `default_completion_model` 更换为 `activeagent` 以避免可能的 KeyError 错误。
 
 2. 运行服务器。
    运行指令
