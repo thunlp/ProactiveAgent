@@ -31,7 +31,7 @@
 0. 依存関係をインストールします。ActivityWatcher 拡張機能の詳細なインストール手順については[こちら](../README.md#install-activity-watcher)を参照してください。
 
 1. 必要な情報を設定します。
-  設定情報には LLM の api_key と ActivityWatcher の設定が含まれます。スクリプトによって検出されるように、テンプレートファイル `./gym/example_config.toml` を **コピー** し、`./gym/private.toml` に **リネーム** して、LLM 呼び出しに関連する設定を **編集** します。
+  設定情報には LLM の api_key と ActivityWatcher の設定が含まれます。スクリプトによって検出されるように、テンプレートファイル `../example_config.toml` を **コピー** し、`../private.toml` に **リネーム** して、LLM 呼び出しに関連する設定を **編集** します。
   **モデルを直接実行するには、activeagent という名前の API キーを設定する必要があります。これは直接呼び出しに使用されます。example_config のコメントを参照してください。**
 
 2. サーバーを実行します。

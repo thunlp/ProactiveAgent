@@ -31,17 +31,17 @@ To fully experience the proactive agent, you will have to install additional dep
 0. Install dependencies. Check [here](../README.md#install-activity-watcher) for detailed installation for the ActivityWatcher extensions.
 
 1. Configure necessary information.
-  The configuration contains api_keys for LLM, some settings for the activity watcher. To edit and detected by our script, you will **copy** the template file `./gym/example_config.toml`, **rename** it as `./gym/private.toml` and **edit** the configuration related to the LLM calling.
+  The configuration contains api_keys for LLM, some settings for the activity watcher. To edit and detected by our script, you will **copy** the template file `../example_config.toml`, **rename** it as `../private.toml` and **edit** the configuration related to the LLM calling.
   **To directly run the model, you should configurate an api_key named activeagent, which will be directly used for calling API. See the comment in example_config.toml**.
 
-2. Running a server.
+1. Running a server.
     ```bash
     python main.py
     ```
     This server is in charge of the functions the agent will be using. If succeeded, the terminal will show information.
     - For windows user, this server will register an AUMID for our agent, which is necessary for our notifications. The script will create a `appid.txt` file, which contains the AUMID. **DO NOT DELETE THIS FILE UNLESS YOU WANT TO GENERATE A NEW AMUID**.
 
-3. With the previous terminal open, open a new terminal and run command:
+2. With the previous terminal open, open a new terminal and run command:
     ```bash
     python ragent.py --platform PC [--chromes <the chrome you want to watch> --interval <interval seconds for each turn>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
