@@ -30,21 +30,11 @@
 
 0. 依存関係をインストールします。ActivityWatcher 拡張機能の詳細なインストール手順については[こちら](../README.md#install-activity-watcher)を参照してください。
 
-1. エージェントの依存関係をインストールします。
-```bash
-pip install -r requirements.txt
-```
-Mac ユーザーの場合は、
-```bash
-pip install -r requirements_mac.txt
-```
-を使用してください。
-
-2. 必要な情報を設定します。
+1. 必要な情報を設定します。
   設定情報には LLM の api_key と ActivityWatcher の設定が含まれます。スクリプトによって検出されるように、テンプレートファイル `./gym/example_config.toml` を **コピー** し、`./gym/private.toml` に **リネーム** して、LLM 呼び出しに関連する設定を **編集** します。
   **モデルを直接実行するには、activeagent という名前の API キーを設定する必要があります。これは直接呼び出しに使用されます。example_config のコメントを参照してください。**
 
-3. サーバーを実行します。
+2. サーバーを実行します。
    コマンドを実行します。
    ```bash
     python main.py
@@ -52,13 +42,13 @@ pip install -r requirements_mac.txt
     成功した場合、ターミナルに情報が表示されます。
     - Windows ユーザーの場合、このサーバーは通知のために AUMID を登録します。スクリプトは AUMID を含む `appid.txt` ファイルを作成します。**新しい AUMID を生成する場合を除き、このファイルを削除しないでください。**
 
-4. 前のターミナルを開いたままにして、新しいターミナルを開き、次のコマンドを実行します。
+3. 前のターミナルを開いたままにして、新しいターミナルを開き、次のコマンドを実行します。
     ```bash
     python ragent.py --platform PC [--chromes <監視するブラウザの名前> --interval <各ターンの間隔秒数>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
     ```
     いくつかのパラメータに注意してください：
-    - `platform`: 実行するプラットフォーム。現在、`PC` デモを実行できます。`Mobile` デモは将来リリースされます。
+    - `--platform`: 実行するプラットフォーム。現在、`PC` デモを実行できます。`Mobile` デモは将来リリースされます。
     - `--apps`: ActivityWatcher に表示される Chrome の名前。プラットフォームや Chrome の種類によってアプリの名前が異なるため、ActivityWatcher の window バケットを通じてアプリ名を見つけ、カンマ `,` で区切って渡す必要があります（将来更新予定です。ご不便をおかけして申し訳ありません）。
     - `--interval`: エージェントが提案を試みる頻度。デフォルトは 15 で、単位は秒です。
         ホスト名はデフォルトバケット名のサフィックスです。例：`aw-watcher-windows_<client_hostname>`

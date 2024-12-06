@@ -30,32 +30,24 @@ To fully experience the proactive agent, you will have to install additional dep
 
 0. Install dependencies. Check [here](../README.md#install-activity-watcher) for detailed installation for the ActivityWatcher extensions.
 
-1. Install packages for the agent.
-```bash
-pip install -r requirements.txt
-```
-For mac user, use
-```bash
-pip install -r requirements_mac.txt
-```
-2. Configure necessary information.
+1. Configure necessary information.
   The configuration contains api_keys for LLM, some settings for the activity watcher. To edit and detected by our script, you will **copy** the template file `./gym/example_config.toml`, **rename** it as `./gym/private.toml` and **edit** the configuration related to the LLM calling.
   **To directly run the model, you should configurate an api_key named activeagent, which will be directly used for calling API. See the comment in example_config.toml**.
 
-1. Running a server.
+2. Running a server.
     ```bash
     python main.py
     ```
     This server is in charge of the functions the agent will be using. If succeeded, the terminal will show information.
     - For windows user, this server will register an AUMID for our agent, which is necessary for our notifications. The script will create a `appid.txt` file, which contains the AUMID. **DO NOT DELETE THIS FILE UNLESS YOU WANT TO GENERATE A NEW AMUID**.
 
-2. With the previous terminal open, open a new terminal and run command:
+3. With the previous terminal open, open a new terminal and run command:
     ```bash
     python ragent.py --platform PC [--chromes <the chrome you want to watch> --interval <interval seconds for each turn>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
     ```
     There are several params that you should notice:
-    - `platform`: The platform you are going to run. Now you can run the `PC` demo, the `Mobile` demo will be released in tht future.
+    - `--platform`: The platform you are going to run. Now you can run the `PC` demo, the `Mobile` demo will be released in tht future.
     - `--apps`: The chrome names displayed in the ActivityWatcher. Based on different platforms and types of chromes, the apps' name varies, so we need you to find the app name through the window bucket of ActivityWatcher, and pass them separated in a comma `,`(will update in the future, sorry for the inconvenience.)
     - `--interval`: How often the agent will try to make a offer. Default to 15, the unit is second.
         A host name is the suffix of the default bucket name, e.g. `aw-watcher-windows_<client_hostname>`

@@ -28,20 +28,11 @@
 
 0. 下载依赖。查询 [此处](../README.md#install-activity-watcher) 以获得详细的下载 ActivityWatcher 插件的指导。
 
-1. 为智能体安装依赖.
-  ```bash
-  pip install -r requirements.txt
-  ```
-  对于 Mac 用户，使用
-  ```bash
-  pip install -r requirements_mac.txt
-  ```
-
-2. 配置必要信息
+1. 配置必要信息
   配置信息包括大语言模型的 api_key, 以及对于 ActivityWatcher 的必要设置，要编辑并被我们的脚本读入，你需要 **复制** 模板文件 `./gym/example_config.toml`, **重命名**为 `./gym/private.toml` 并 **编辑** 其中与 LLM 调用有关的参数。
   **为了能够直接运行模型，你应当配置一个名称为 activeagent 的令牌，该令牌将会被直接调用。请参考 example_config 的注释。**
 
-3. 运行服务器。
+2. 运行服务器。
    运行指令
    ```bash
     python main.py
@@ -49,7 +40,7 @@
     如果成功，控制台将输出信息。
     - 对于 windows 用户，该服务器将会为我们的智能体注册一个 AUMID, 这对于我们的桌面通知是必须的。脚本将会创建一个 `appid.txt` 文件，其中包含我们的 AUMID. **请勿删除此文件，除非你想要生成一个新的 AUMID**。
 
-4. 保留之前的控制台，打开新的控制台并运行指令
+3. 保留之前的控制台，打开新的控制台并运行指令
     ```bash
     python ragent.py --platform PC [--chromes <你希望监听的浏览器名称> --interval <每轮之间的间隔>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
