@@ -43,7 +43,7 @@
 
 我们同样提供了一个展示我们智能体的简易展示。
 
-https://github.com/user-attachments/assets/4a9152e8-15ee-4bdf-a917-52a9e6b4f375
+https://github.com/user-attachments/assets/81e56660-727f-4ba8-b26c-d28b580a8b0a
 
 未来，我们会持续提升改善质量，增加对于真实场景的覆盖。
 

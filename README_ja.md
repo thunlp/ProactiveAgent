@@ -43,7 +43,7 @@
 
 デモも提供されており、エージェントのパフォーマンスを示しています。
 
-https://github.com/user-attachments/assets/4a9152e8-15ee-4bdf-a917-52a9e6b4f375
+https://github.com/user-attachments/assets/81e56660-727f-4ba8-b26c-d28b580a8b0a
 
 将来的には、データの質を継続的に向上させ、実世界のシナリオのカバレッジを増やしていきます。
 

@@ -43,7 +43,7 @@ This project (Proactive Agent) aims to construct a fully active agent, who may a
 
 A demo is also provided to show the performance of our agent.
 
-https://github.com/user-attachments/assets/4a9152e8-15ee-4bdf-a917-52a9e6b4f375
+https://github.com/user-attachments/assets/81e56660-727f-4ba8-b26c-d28b580a8b0a
 
 In the future, we will continually improve the data quality and increase the coverage of real-world scenarios.
 
