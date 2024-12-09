@@ -22,7 +22,9 @@ codelinker
 docstring_parser
 windows-toasts; sys_platform=='windows'
 macos_notifications; sys_platform=='darwin'
-
+psutil
+pywinauto
+windows_toasts
 
 
 
