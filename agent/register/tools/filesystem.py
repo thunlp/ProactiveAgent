@@ -85,7 +85,7 @@ def read_from_file(filepath: str, line_number: int = 1) -> str:
         raise FileNotFoundError(f"File {filepath} not found in workspace.")
 
     content = ''
-    with open(full_path, 'r') as f:
+    with open(full_path, 'r', encoding='utf-8', errors='ignore') as f:
         lines = f.readlines(int(1e5))
     if len(lines) == 0:
         return ""
