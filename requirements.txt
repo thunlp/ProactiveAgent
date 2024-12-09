@@ -6,6 +6,7 @@ docx
 pyPDF2
 pandas
 pynput
+psutil
 openai
 pyyaml
 gradio
@@ -18,13 +19,8 @@ watchdog
 aw_client
 jsonlines
 pyperclip
+pywinauto
 codelinker
 docstring_parser
-windows-toasts; sys_platform=='windows'
+windows-toasts; sys_platform=='win32'
 macos_notifications; sys_platform=='darwin'
-psutil
-pywinauto
-windows_toasts
-
-
-
