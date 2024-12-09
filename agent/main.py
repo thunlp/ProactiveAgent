@@ -68,7 +68,7 @@ async def search(query: str, search_engine:str = 'bing') -> Dict[str,str]:
     return await toolreg["search"](query, search_engine)
 
 @app.get('/chat')
-async def chat(messages: str, api_key:str = "", base_url:Optional[str] = None) -> Dict[str,str]:
+async def chat(messages: str, api_key:str = "", model:Optional[str] = "gpt-3.5-turbo", base_url:Optional[str] = None) -> Dict[str,str]:
     """
     chat with ChatGPT-3.5-turbo. This function will call the chat tool, and pass the message to the chatbot, the response will be copied in the clipboard. Details in register/tools/chat.py
     You can modity the default model by modifying the `model` variable in `register/tools/chat.py`.
@@ -84,7 +84,7 @@ async def chat(messages: str, api_key:str = "", base_url:Optional[str] = None) -
         else, return {'status': 'error', 'error': error message}
     """
     # print(messages)
-    return await toolreg["chat"](messages,api_key = api_key, base_url = base_url)
+    return await toolreg["chat"](messages, api_key = api_key, model = model, base_url = base_url)
 
 @app.get('/read')
 async def read(filepath: str, line_number: int = 1) -> Dict[str,str]:

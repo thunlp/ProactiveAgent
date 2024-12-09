@@ -807,6 +807,7 @@ class Executor(Trigger):
                     case 'chat':
                         func_params.update({
                             'api_key' : self.api_key,
+                            'model' : self.model,
                             'base_url': self.base_url,
                             'messages': json.dumps(infos["events"])})
 
