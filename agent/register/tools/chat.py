@@ -12,6 +12,7 @@ If the assistant ask you to generate code, you should only generate code without
 @toolwrapper(name="chat",visible=True)
 async def chat(messages: str = "Who are you?",
                 api_key :str = "",
+                model:Optional[str] = "gpt-3.5-turbo",
                 base_url:Optional[str] = None):
     """
     This function is used to chat with the OpenAI API, or to chat with the gpt. The funtion will copy the response to the clipboard, and return a status indicating if the function is successful or not.
@@ -28,7 +29,7 @@ async def chat(messages: str = "Who are you?",
     print('====>', messages)
     client = OpenAI(api_key = api_key, base_url = base_url)
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=model,
         messages = [{"role": "user", "content": BASIC_PROMPT.format(infos=messages)}]
     )
     # print(response.choices[0].message.content)
