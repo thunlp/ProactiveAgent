@@ -142,9 +142,9 @@ def next_trace(user_id, trace_name, obs):
                     )
     # 读取data目录的文件, 根据对应结果文件判断是否需要标注
     for file in os.listdir(data_dir):
+        tr_name = os.path.splitext(file)[0]
         if tr_name == "splits":
             continue
-        tr_name = os.path.splitext(file)[0]
         result_path = os.path.join(save_dir, file)
         # 如果结果文件不存在，说明该trace还未标注
         if not os.path.exists(result_path):
