@@ -19,10 +19,8 @@ ablations/**
 test.jsonl
 dataset/annotation/result
 dataset/analyse_scenes.ipynb
-dataset/agent_data
 events.log
 gym/cfg_test.yaml
 dataset/analyse_scenes.ipynb
-dataset/agent_data/**
 agent_data.zip
 **/.cache/
