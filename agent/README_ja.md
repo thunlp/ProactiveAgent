@@ -35,15 +35,7 @@
   **モデルを直接実行するには、activeagent という名前の API キーを設定する必要があります。これは直接呼び出しに使用されます。example_config のコメントを参照してください。**
   同様に、KeyErrorエラーの可能性を回避するために、`default_completion_model ` を `activeagent` に置き換えることをお勧めします。
 
-2. サーバーを実行します。
-   コマンドを実行します。
-   ```bash
-    python main.py
-    ```
-    成功した場合、ターミナルに情報が表示されます。
-    - Windows ユーザーの場合、このサーバーは通知のために AUMID を登録します。スクリプトは AUMID を含む `appid.txt` ファイルを作成します。**新しい AUMID を生成する場合を除き、このファイルを削除しないでください。**
-
-3. 前のターミナルを開いたままにして、新しいターミナルを開き、次のコマンドを実行します。
+2. Proactive Agent を実行します。
     ```bash
     python ragent.py --platform PC [--chromes <監視するブラウザの名前> --interval <各ターンの間隔秒数>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10

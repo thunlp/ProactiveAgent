@@ -33,15 +33,7 @@
   **为了能够直接运行模型，你应当配置一个名称为 activeagent 的令牌，该令牌将会被直接调用。请参考 example_config 的注释。**
   同样建议您将 `default_completion_model` 更换为 `activeagent` 以避免可能的 KeyError 错误。
 
-2. 运行服务器。
-   运行指令
-   ```bash
-    python main.py
-    ```
-    如果成功，控制台将输出信息。
-    - 对于 windows 用户，该服务器将会为我们的智能体注册一个 AUMID, 这对于我们的桌面通知是必须的。脚本将会创建一个 `appid.txt` 文件，其中包含我们的 AUMID. **请勿删除此文件，除非你想要生成一个新的 AUMID**。
-
-3. 保留之前的控制台，打开新的控制台并运行指令
+2. 运行指令
     ```bash
     python ragent.py --platform PC [--chromes <你希望监听的浏览器名称> --interval <每轮之间的间隔>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10

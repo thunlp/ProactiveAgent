@@ -35,14 +35,7 @@ To fully experience the proactive agent, you will have to install additional dep
   **To directly run the model, you should configurate an api_key named activeagent, which will be directly used for calling API. See the comment in example_config.toml**.
   It is suggested that you also change the `default_completion_model` to `activeagent` to avoid potential KeyErrors.
 
-1. Running a server.
-    ```bash
-    python main.py
-    ```
-    This server is in charge of the functions the agent will be using. If succeeded, the terminal will show information.
-    - For windows user, this server will register an AUMID for our agent, which is necessary for our notifications. The script will create a `appid.txt` file, which contains the AUMID. **DO NOT DELETE THIS FILE UNLESS YOU WANT TO GENERATE A NEW AMUID**.
-
-2. With the previous terminal open, open a new terminal and run command:
+2. Run command:
     ```bash
     python ragent.py --platform PC [--chromes <the chrome you want to watch> --interval <interval seconds for each turn>]
     python ragent.py --platform PC --chromes explorer.exe,mesdge.exe --interval 10
