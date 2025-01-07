@@ -1,6 +1,7 @@
 '''
 The main agent file.
 '''
+import os
 from time import sleep
 import json
 import socket
@@ -97,7 +98,7 @@ Android Socket Configuration:
             pc = PCEnv(aw_client = aw_client,
                         chrome_apps = chromes,
                         interval_seconds = interval,
-                        watched_path=[r"C:\Users\18498\Downloads"],
+                        watched_path=[os.path.abspath('.')],
                         name = platform)
             trigger = Trigger(env = platform)
             eventSink.init()
