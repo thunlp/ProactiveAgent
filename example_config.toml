@@ -19,7 +19,7 @@ model = "gpt-4o"
 
 
 # To run active agent directly, fill the following fields.
-# For active agent part, we set the model as activeagent, so just fill directly.
+# For active agent part, we set the model as activeagent, so just fill it directly.
 [[api_keys.activeagent]]
 api_key = "sk-"
 model = "gpt-4o"
@@ -29,7 +29,7 @@ default_completions_model = "gpt-4o" #which model will be used in experiment if 
 save_completions = true # Whether to store the completions in the repo, if true, the completions will be stored in `.completions/`
 use_cache = false # Whether to use cache, if true, when given exact same input stored in `.completions`, the cache will be activated and return the response stored .
 
-# !If change `default_completions_model`, make sure you use *alias* instead of *model name*. i.e. use `openi-3.5` rather than `gpt-3.5-turbo`.
+# !If change `default_completions_model`, make sure you use *alias* instead of *model name*. i.e. use `openai-3.5` rather than `gpt-3.5-turbo`.
 
 [multimodal.image]
 default_model = "gpt-4o" # use model alias.
