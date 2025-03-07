@@ -74,10 +74,10 @@ model = "your_model_name"
 
 ### データ生成のためのシーンの構築
 
-以下のコマンドを使用してGYMのシーンを構築できます。
+以下のコマンドを使用してGYMのシーンを構築できます(ルートフォルダで実行)。
 
 ```bash
-python  build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/new_scenes.yaml
+python dataset/build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/new_scenes.yaml
 ```
 
 これにより、`./dataset`フォルダに新しいシーンファイル`new_scenes.yaml`が生成されます。
@@ -88,7 +88,7 @@ python  build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/
 以下のコマンドを使用してGYMでイベントを生成できます。
 
 ```bash
-python run_datagen.py --scene_file ./dataset/new_scenes.yaml
+python dataset/run_datagen.py --scene_file ./dataset/new_scenes.yaml
 ```
 
 これにより、イベントが生成され、`./dataset/agent_data`フォルダに`.jsonl`形式で保存されます。

@@ -76,7 +76,7 @@ Examples like:
 - file.save(file_path, content)
 - browser.open(url)
 
-These example lacks details and essential descriptions of its parameters, return values, and functions. You should provide more detailed descriptions of the agent's actions based on the above examples. 
+These example lacks details and essential descriptions of its parameters, return values, and functions. You should provide more detailed descriptions of the agent's actions based on the above examples.
 Now generate diverse descriptions of the agent's actions space based on the above aspects. You are encouraged to be creative and detailed in your descriptions. Make sure all the action is implementable and realistic for a text-and-vision model based agent."""
 
     messages = await update_inst(agent_inst, messages)
@@ -105,9 +105,9 @@ MAKE SURE YOUR EVENTS LIKE THE FOLLOWING:
 - The agent reads received e-mails and schedule a meeting for user.
 """ + '\n- '.join(sample_events)
 
-    
+
     messages = await update_inst(event_inst, messages)
-    
+
 
 
     structure_inst = """Now you should summarize and structure the content you have generated in JSON syntax as follow:\n"""+json.dumps([
@@ -127,7 +127,7 @@ MAKE SURE YOUR EVENTS LIKE THE FOLLOWING:
                 "description": "a detailed description of the user",
             }
 
-        }, 
+        },
         {
             "environment": {
                 "theme": "a short term to describe the scene",
@@ -158,7 +158,7 @@ MAKE SURE YOUR EVENTS LIKE THE FOLLOWING:
 
 
 async def main(seedfile: str, savefile: str):
-    with open(seedfile, "r") as f:
+    with open(seedfile, "r", encoding = "utf-8") as f:
         seeds = yaml.safe_load(f)
     tasks = []
     for scene, seed_tasks in seeds.items():
@@ -180,12 +180,12 @@ async def main(seedfile: str, savefile: str):
             traceback.print_exc()
 
     scenes = results
-    
+
     for idx,settings in enumerate(scenes):
         out_file_path = os.path.join(save_path,"scene_{}.jsonl".format(idx))
         cfg_file_path = os.path.join(save_path,"scene_{}.yaml".format(idx))
         settings['agent'] = {
-        } 
+        }
         settings['user']['theme'] = settings['environment']['theme']
         config = {
             "eventSink": {
@@ -196,6 +196,6 @@ async def main(seedfile: str, savefile: str):
         # write config to file
         with open(cfg_file_path, 'w') as f:
             yaml.dump(config, f)
-    
+
 if __name__ == "__main__":
     fire.Fire(main)

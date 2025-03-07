@@ -24,7 +24,7 @@ You will see the following output:
  * Running on http://localhost:7860/ (Press CTRL+C to quit)
 ```
 
-Now you can open `http://localhost:7860` with your browser, and you will be able to annotate the data. 
+Now you can open `http://localhost:7860` with your browser, and you will be able to annotate the data.
 Annotated data will be saved under `./dataset/annotation/result` folder.
 
 Tips:
@@ -73,10 +73,10 @@ To build the trainset for the Proactive Agent, you have to do following things:
 
 ### Build Scenes for Data Generation
 
-You can build scenes for the GYM with the following command:
+You can build scenes for the GYM with the following command (Run in root folder):
 
 ```bash
-python  build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/new_scenes.yaml
+python dataset/build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/new_scenes.yaml
 ```
 
 This will generate a new scene file `new_scenes.yaml` in the `./dataset` folder.
@@ -87,7 +87,7 @@ All scenes will also have a copy in the `dataset/agent_data` folder.
 You can generate events with the GYM with the following command:
 
 ```bash
-python run_datagen.py --scene_file ./dataset/new_scenes.yaml
+python dataset/run_datagen.py --scene_file ./dataset/new_scenes.yaml
 ```
 
 This will generate events and store them in `.jsonl` format under the `./dataset/agent_data` folder.

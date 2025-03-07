@@ -63,9 +63,9 @@ model = "你的模型名称"
 - 通过生成的事件为 主动智能体 构建训练数据。
 
 ### 为数据生成构建场景
-你可以用下列指令为 环境模拟器 构建场景：
+你可以用下列指令为 环境模拟器 构建场景（在根目录下运行）：
 ```bash
-python  build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/new_scenes.yaml
+python dataset/build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/new_scenes.yaml
 ```
 
 这将在 `./dataset` 文件夹下生成新的场景文件 `new_scenes.yaml`。
@@ -75,10 +75,10 @@ python  build_scenes.py --seedfile ./dataset/seedtask.yaml --savefile ./dataset/
 你可以用下列指令，通过 环境模拟器生成事件
 
 ```bash
-python run_datagen.py --scene_file ./dataset/new_scenes.yaml
+python dataset/run_datagen.py --scene_file ./dataset/new_scenes.yaml
 ```
 
-这将生成事件并将其以 `.jsonl` 格式保存于 `./dataset/agent_data` 文件夹下。 
+这将生成事件并将其以 `.jsonl` 格式保存于 `./dataset/agent_data` 文件夹下。
 
 ### 为主动智能体生成训练数据
 你可以用下列指令为主动智能体生成训练数据。
