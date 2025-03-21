@@ -9,15 +9,21 @@
 </div>
 
 <p align="center">
-  <a href="#概述">模型</a> •
+  <a href="#概述">概述</a> •
   <a href="#数据">数据公布</a> •
   <a href="#使用">使用</a> •
   <a href="#引用">引用</a> •
-  <a href="https://arxiv.org/abs/2410.12361">论文</a>
+  <a href="https://arxiv.org/abs/2410.12361">论文</a> •
+  <a href="https://huggingface.co/YancyLee/ProactiveAgent/tree/main">模型</a>
 
 </p>
 
 </div>
+
+## 最新进展
+
+- **[2025/03/21]**: 主动智能体和奖励智能体的模型已经公开， 在[这里](https://huggingface.co/YancyLee/ProactiveAgent/tree/main) 查看我们的模型！
+- **[2025/01/22]**: 我们的文章被 ICLR 2025 接受.
 
 该项目(主动智能体)目标为构建一个完全主动的，可预测用户需要并主动帮助，在没有用户显式要求的情况下提供帮助与行为的智能体。我们通过数据收集，生成流水线，构建自动评估机以及通过生成的数据进行训练的方式实现这一目标。目前，我们将提供全套采集与生成流水线，数据集，以及相应的评估脚本，以及用于微调LLM的提示。
 

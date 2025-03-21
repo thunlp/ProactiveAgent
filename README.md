@@ -5,19 +5,23 @@
 <div align="center">
 
 ![Dialogues](https://img.shields.io/badge/Current\_Event\_Size-6790-red?style=flat-square)
-
 </div>
 
 <p align="center">
-  <a href="#overview">Model</a> •
+  <a href="#overview">Overview</a> •
   <a href="#data">Data Release</a> •
   <a href="#usage">Usage</a> •
   <a href="#citation">Citation</a> •
-  <a href="https://arxiv.org/abs/2410.12361">Paper</a>
-
+  <a href="https://arxiv.org/abs/2410.12361">Paper</a> •
+  <a href="https://huggingface.co/YancyLee/ProactiveAgent/tree/main">Model</a>
 </p>
 
 </div>
+
+## News
+
+- **[2025/03/21]**: The model for Proactive Agent and Reward Agent is released! Check our model at [here](https://huggingface.co/YancyLee/ProactiveAgent/tree/main)!
+- **[2025/01/22]**: Our paper was accepted by ICLR 2025.
 
 This project (Proactive Agent) aims to construct a fully active agent, who may anticipate user's requirements and take the initiative, offering assistance and suggesting actions without explicit requests from user. We achieve this by developing a data collection and generation pipeline, building an automatic evaluator and training agent within data generated. For now, we provide the whole collection and generation pipeline, the datasets, and the corresponding evaluation scripts, and the prompts to finetune LLM for proactive agent.
 
