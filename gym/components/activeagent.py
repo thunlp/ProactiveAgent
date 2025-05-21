@@ -131,7 +131,7 @@ class ProactiveAgent(BasicComponet):
                 self.logger.warning(res)
                 pred = self.extrat_pred(res)
                 
-                if bool(os.environ.get("USE_ACTIVERM", "False")):
+                if os.environ.get("USE_ACTIVERM", "False") == "True":
                     from .reward import RewardModel
                     rm = RewardModel()
                     res = await rm.judge(pred.get("Proactive Task", None))
