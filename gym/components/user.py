@@ -116,7 +116,7 @@ class UserAgent(BasicComponet):
 
     async def judge(self) -> bool:
 
-        if bool(os.environ.get("USE_ACTIVERM", "False")):
+        if os.environ.get("USE_ACTIVERM", "False") == "True":
             from .reward import RewardModel
             rm = RewardModel()
             pred_task = None
